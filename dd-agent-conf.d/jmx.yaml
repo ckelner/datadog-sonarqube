@@ -26,7 +26,7 @@ instances:
       #refresh_beans: 600 # Optional (in seconds), default is 600 seconds. Sets refresh period for refreshing matching MBeans list.
                           # Decreasing this value may result in increased CPU usage.
     tags:
-      env: motorola
+      env: testing
       poc: sonarqube
 
     # List of metrics to be collected by the integration
