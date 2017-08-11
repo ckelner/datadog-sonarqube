@@ -6,9 +6,6 @@ if [ -z $1 ]; then
 fi
 
 PWD=$(pwd)
-# NOTE: Kelnersux => You'll need -Djava.rmi.server.hostname=<ip-from-docker>
-# to connect via jconsole... You can find it in the jmx.yaml file after you
-# run this script. Generally 172.17.0.x on OSX w/ the latest version as of Aug 10 2017
 J_OPTS="-Dcom.sun.management.jmxremote= -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.rmi.port=9998 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.local.only=false"
 
 docker stop sonarqube-sandbox
