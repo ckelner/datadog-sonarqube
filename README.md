@@ -1,6 +1,6 @@
 # Sonarqube
 
-This is a quick hack for a Motorola meeting, but I wanted to capture my efforts.
+This is a quick POC - use with caution.
 
 ## Prerequisites
 
@@ -17,4 +17,4 @@ This is a quick hack for a Motorola meeting, but I wanted to capture my efforts.
   - I suggest the [projects/languages/generic-coverage/sonar-runner](https://github.com/SonarSource/sonar-examples/tree/master/projects/languages/generic-coverage/sonar-runner) project
 - Change into the directory where the code and configuration is
 - Run `<path-to-executable>/sonar-scanner`
-- You can find JMX metrics under the `jmx.sonarqube...` namespace!
+- You can find JMX metrics under the `jmx.sonarqube.x` namespace and JVM under the `jvm.x` namespace!
